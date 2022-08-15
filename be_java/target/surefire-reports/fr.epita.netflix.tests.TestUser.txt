@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: fr.epita.netflix.tests.TestUser
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.276 s <<< FAILURE! - in fr.epita.netflix.tests.TestUser
+testSessionFactory  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactoryBean' defined in fr.epita.netflix.tests.BaseTestConfig: Invocation of init method failed; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: fr.epita.netflix.datamodel.Users column: contact_id (should be mapped with insert="false" update="false")
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: fr.epita.netflix.datamodel.Users column: contact_id (should be mapped with insert="false" update="false")
+
