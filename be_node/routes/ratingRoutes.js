@@ -4,10 +4,10 @@ const ratingModel = require('../models/ratingModel')
 
 const Router = express.Router()
 
-Router.get('/get-allratings/:userid', async(req, res) => {
-    const {userid} = req.params
+Router.get('/get-allratings/:username', async(req, res) => {
+    const {username} = req.params
 
-    const rating = await ratingModel.find({userId: userid})
+    const rating = await ratingModel.find({username: username})
     return res.status(200).json(rating)
 })
 
