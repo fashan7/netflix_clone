@@ -1,0 +1,125 @@
+.watch {
+  background-color: #181818;
+
+  .back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .more-details-containerMain{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+  }
+
+  .watchBody{
+    background: #181818;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 25px 5vw;
+    position: relative;
+  }
+
+  .icons {
+    display: flex;
+    margin-bottom: 10px;
+
+    .icon {
+      border: 2px solid white;
+      padding: 5px;
+      border-radius: 50%;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .info-spacer{
+    color: #a3a3a3;
+    margin: 0 4px;
+  }
+
+  .maturity-number{
+    border: 1px solid #a1a1a1;
+    padding: 0 5px;
+  }
+  
+  .more-details-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .section-header .section-header-text {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+
+  .more-details-cell {
+    margin: 6px;
+    max-width: 100%;
+  }
+
+
+
+  .more-details-label{
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+
+  .more-details-item{
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    white-space: pre-wrap;
+  }
+
+  .listItem {
+    display: flex;
+    margin: 16px 0;
+    // background-color: var(--main-color);
+    // margin-right: 5px;
+    // overflow: hidden;
+    // cursor: pointer;
+    // color: white;
+    // padding: 5px;
+  
+    .movieListMain{
+      display: inline-table;
+      flex: 1 0 auto;
+      list-style-type: none;
+      margin: 0 12px 0 0;
+      position: relative;
+    
+    }
+    
+    .nm-collections-title-name{
+      color: #fff;
+      display: block;
+      margin-top: 2px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}

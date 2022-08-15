@@ -1,0 +1,35 @@
+.main{
+    background-color: #181818;
+    overflow: hidden;
+}
+
+.section{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.nm-collections-metadata{
+    max-width: 598px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+    transition-delay: 1s;
+    transition-duration: .75s;
+}
+
+.nm-collections-metadata-title{
+    margin-top: 10vw;
+    font-size: 3rem;
+    color:#fff
+}
+
+.nm-collections-metadata-synopsis{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 60%);
+    transition-delay: 0s;
+    transition-duration: .75s;
+    width: 100%;
+}
