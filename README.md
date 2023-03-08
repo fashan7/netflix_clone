@@ -1,63 +1,101 @@
-Movie Database Application (NETFLIX Clone)
+
+# Movie Database Application
 
 This is a movie database application that allows users to search and rate movies. The application is built using a microservices architecture, with separate services for front-end development, back-end development, database modeling, API management, and application deployment.
 
-Features
-
+## Features
 The main features of the application are:
+- User authentication
+- Welcome page with last seen films, new movies, and recommendations
+- Play film (mock)
+- Rate film
+- Compute stats (10 most popular movies, 10 most viewed movies)
 
-User authentication
-Welcome page with last seen films, new movies, and recommendations
-Play film (mock)
-Rate film
-Compute stats (10 most popular movies, 10 most viewed movies)
-Technologies Used
 
+## Technologies Used
 The application is built using the following technologies:
+- Front-end Development: React.js
+- Back-end Development: Node.js, Java
+- Database Modeling: PostgresQL, MongoDB
+- Cloak
+- Application Deployment: Docker
 
-Front-end Development: React.js
-Back-end Development: Node.js, Express.js
-Database Modeling: PostgresQL, MongoDB, Neo4j
-API Management: Kong API Gateway
-Application Deployment: Docker, Kubernetes
-Architecture Overview
 
+## Architecture Overview
 The application architecture is based on microservices, with each service handling a specific set of functions:
+- Front-end Development: Handles the user interface and user authentication.
+- Back-end Development: Provides REST APIs for movie search, rating, and stats computation.
+- Database Modeling: Creates and manages the relational databases.
+- API Management: Handles the routing and authentication of requests to the appropriate services.
 
-Front-end Development: Handles the user interface and user authentication.
-Back-end Development: Provides REST APIs for movie search, rating, and stats computation.
-Database Modeling: Creates and manages the relational and document-based databases.
-API Management: Handles the routing and authentication of requests to the appropriate services.
-Application Deployment: Deploys the application on a Kubernetes cluster.
-Installation Guide
+
+
+
+
+
+## Installation Guide
 
 To install and run the application locally, follow these steps:
 
-Clone the repository: git clone https://github.com/fashan7/netflix_clone.git
-Install dependencies: npm install
-Start the application: npm start
-Access the application at http://localhost:3000
-API Documentation
+Clone the repository
+```bash
+  git clone https://github.com/fashan7/netflix_clone.git
+```
 
-The application has the following APIs:
+Install dependencies
+```bash
+  npm install
+```
 
-GET /movies - Returns a list of movies.
-GET /movies/:id - Returns details of a specific movie.
-POST /movies/:id/rating - Adds a rating and comment for a specific movie.
-GET /stats/popular - Returns the 10 most popular movies.
-GET /stats/viewed - Returns the 10 most viewed movies.
-Production Guide
+Start the application
+```bash
+  npm start
+```
 
-For instructions on how to deploy the application on a production environment, see the production guide here.
+Access the application at 
+```bash
+  http://localhost:3000
+```
 
-Project Demo
 
-You can access a demo of the project here.
 
-Future Improvements
+
+## API Documentation
+
+#### Returns a list of movies
+
+```http
+  GET /movies 
+```
+
+#### Returns details of a specific movie.
+
+```http
+  GET /movies/:id
+```
+
+#### Adds a rating and comment for a specific movie.
+
+```http
+  POST /movies/:id/rating 
+```
+
+#### Returns the 10 most popular movies.
+
+```http
+  GET /stats/popular
+```
+
+#### Returns the 10 most viewed movies.
+
+```http
+  GET /stats/viewed 
+```
+
+
+## Future Improvements
 
 Some potential improvements for the application are:
-
-Adding support for graph-based databases for viewing graphs and recommendations.
-Implementing a recommendation engine to suggest movies based on user ratings.
-Improving the user interface and adding more features such as movie trailers and search filters.
+- Adding support for graph-based databases for viewing graphs and recommendations.
+- Implementing a recommendation engine to suggest movies based on user ratings.
+- Improving the user interface and adding more features such as movie trailers and search filters.
